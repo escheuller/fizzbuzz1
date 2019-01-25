@@ -7,11 +7,11 @@ int main(void){
     array[i] = i;
   while(j<100)
   {
-  if(array[j] % 3 == 0 && array[j] % 5 == 0)
+  if(array[j] % 4 == 0 && array[j] % 8 == 0)
     printf("fizzbuzz ");
-  else if(array[j] % 3 == 0)
+  else if(array[j] % 4 == 0)
    printf("fizz ");
-  else if(array[j] % 5 == 0)
+  else if(array[j] % 8 == 0)
     printf("buzz ");
   else
     printf("%d ", array[j]);
