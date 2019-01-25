@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void){
+  int array[100];
+  int j = 0;
+  for(int i = 0; i<100; i++)
+    array[i] = i;
+  while(j<100)
+  {
+  if(array[j] % 3 == 0 && array[j] % 5 == 0)
+    printf("fizzbuzz ");
+  else if(array[j] % 3 == 0)
+   printf("fizz ");
+  else if(array[j] % 5 == 0)
+    printf("buzz ");
+  else
+    printf("%d ", array[j]);
+    j++;
+    }
+ return 0;
+}
